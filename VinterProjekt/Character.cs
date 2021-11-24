@@ -3,6 +3,8 @@ using Raylib_cs;
 
 public class Character
 {
+    public static List<Character> allCharacters = new List<Character>();
+
     private string name = "Jorgan";
 
     private int hp;     //Health Points
@@ -11,12 +13,24 @@ public class Character
 
     private float speed = 200;
 
-    public float x = 10;
-    public float y = 10;
+    Rectangle rect = new Rectangle();
+
+
+    //Gjort med hjälp av Elias!!!
+    public Character(int x, int y, int width, int height)
+    {
+        rect.x = x;
+        rect.y = y;
+        rect.width = width;
+        rect.height = height;
+
+
+        allCharacters.Add(this);
+    }
 
     public void DrawCharacter()
     {
-        Raylib.DrawRectangle((int)x,(int)y,100,100,Color.GREEN);
+        Raylib.DrawRectangleRec(rect, Color.GREEN);
     }
 
     public void UpdateCharacter()
@@ -33,25 +47,25 @@ public class Character
 
         if (Raylib.IsKeyDown(KeyboardKey.KEY_UP))
         {
-            y -= speed * Raylib.GetFrameTime();
+            rect.y -= speed * Raylib.GetFrameTime();
 
         }
 
         if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
         {
-            y += speed * Raylib.GetFrameTime();
+            rect.y += speed * Raylib.GetFrameTime();
 
         }
 
         if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
         {
-            x -= speed * Raylib.GetFrameTime();
+            rect.x -= speed * Raylib.GetFrameTime();
 
         }
 
         if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT))
         {
-            x += speed * Raylib.GetFrameTime();
+            rect.x += speed * Raylib.GetFrameTime();
 
         }
 

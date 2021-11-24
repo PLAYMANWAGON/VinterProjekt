@@ -3,7 +3,7 @@ using Raylib_cs;
 
 Console.WriteLine("Hello, World!");
 
-Character player = new Character();
+Character player = new Character(10,10, 100,100);
 
 Raylib.InitWindow(800, 600, "CHOBLAN GAME");
 

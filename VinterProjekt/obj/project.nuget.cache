@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KI6HR8NG2VchADurEGLl6tTWR8OQNsIfl/LN48R6h4l8KBwZ5L8XYwBkoGLtyyJVbDpAerRSIZHvzXW8q/JDzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aironas.keturka\\Documents\\MokykliniaiSudai\\Gaming\\Prog2\\VinterProjekt\\VinterProjekt\\VinterProjekt\\VinterProjekt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aironas.keturka\\.nuget\\packages\\raylib-cs\\3.7.0.1\\raylib-cs.3.7.0.1.nupkg.sha512",
+    "C:\\Users\\aironas.keturka\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

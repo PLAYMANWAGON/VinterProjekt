@@ -1,4 +1,3 @@
-using System;
 using Raylib_cs;
 
 public class Character
@@ -27,6 +26,55 @@ public class Character
 
         allCharacters.Add(this);
     }
+
+    public void AddToInventory(Item item)
+    {
+
+    }
+
+    public void RemoveFromInventory(int n)
+    {
+
+    }
+
+    public void UseItem(int n, Character target)
+    {
+
+    }
+
+    public void UseItem(int n)
+    {
+
+    }
+
+    public int GetInventoryLength()
+    {
+
+    }
+
+    public string GetItemInfo(int n)
+    {
+
+    }
+
+    public int GetHp()
+    {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #region Raylib Updates
 
     public void DrawCharacter()
     {
@@ -69,5 +117,9 @@ public class Character
 
         }
 
+
+
     }
+
+    #endregion
 }

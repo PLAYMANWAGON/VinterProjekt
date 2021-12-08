@@ -4,11 +4,11 @@ public class Character
 {
     public static List<Character> allCharacters = new List<Character>();
 
-    private string name = "Jorgan";
+    protected string name = "Jorgan";
 
-    private int hp;     //Health Points
-    private int mp;     //Magic Points
-    private int sp;     //Shield Points
+    protected int hp;     //Health Points
+    protected int mp;     //Magic Points
+    protected int sp;     //Strenght Points
 
     private float speed = 200;
 
@@ -59,18 +59,18 @@ public class Character
 
     public int GetHp()
     {
-        
+
     }
 
+    public int ModifyHp(int amount)
+    {
 
+    }
 
+    public void Attack(Character target)
+    {
 
-
-
-
-
-
-
+    }
 
 
 

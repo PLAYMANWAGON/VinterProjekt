@@ -2,14 +2,14 @@ namespace VinterProjekt
 {
     public class Item
     {
-        protected name;
+        protected string name;
 
-        public string GetInfo()
+        public virtual string GetInfo()
         {
-
+            return "";
         }
 
-        public void Use(Character target)
+        public virtual void Use(Character target)
         {
 
         }
